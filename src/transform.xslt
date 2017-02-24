@@ -17,7 +17,7 @@
   </xsl:template>
 
   <xsl:template match="*">
-    <!-- remove normalize-space() if you want keep white-space at it is --> 
+    <!-- remove normalize-space() if you want keep white-space at it is -->
     <xsl:value-of select="concat($quote, normalize-space(), $quote)" />
     <xsl:if test="following-sibling::*">
       <xsl:value-of select="$delim" />
